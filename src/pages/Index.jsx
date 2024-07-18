@@ -1,48 +1,26 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4">
-        <h1 className="text-2xl font-bold">My Application</h1>
-      </header>
-
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Welcome to Your Application</CardTitle>
-            <CardDescription>This is a bare-bones structure you can build upon.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="mb-4">Start by modifying this content or adding new components.</p>
-            <Button>Get Started</Button>
-          </CardContent>
-        </Card>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card>
-            <CardHeader>
-              <CardTitle>Feature 1</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Description of feature 1 goes here.</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Feature 2</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Description of feature 2 goes here.</p>
-            </CardContent>
-          </Card>
-        </div>
-      </main>
-
-      <footer className="bg-secondary text-secondary-foreground p-4 text-center">
-        <p>&copy; 2023 My Application. All rights reserved.</p>
-      </footer>
+    <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-6">Welcome to Our App</h1>
+      <Card className="w-full max-w-md mx-auto">
+        <CardHeader>
+          <CardTitle>Get Started</CardTitle>
+          <CardDescription>Begin your journey with us today!</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-gray-600">
+            This is a sample page created using React and shadcn components. 
+            Feel free to modify and expand upon this template.
+          </p>
+        </CardContent>
+        <CardFooter>
+          <Button className="w-full">Learn More</Button>
+        </CardFooter>
+      </Card>
     </div>
   );
 };
